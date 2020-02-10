@@ -1,0 +1,62 @@
+.table{
+    width: 100%;
+    tr{
+        width: 100%;
+        th, td{
+            flex: 1;
+            border-right: 1px solid rgba(0,0,0,.15);
+        }
+    }
+
+    thead{
+        border-bottom: 1px solid rgba(0,0,0,.15);
+        tr > th{
+            background: #f1f3f5;
+            padding: 1.2rem 1rem;
+            font-weight: normal;
+            color: rgba(0,0,0,.54);;
+        }
+    }
+
+    tbody > tr > td{
+        padding: 0.4rem 1rem;
+        min-height: 3rem;
+        line-height: 3rem;
+        border-bottom: 1px solid rgba(0,0,0,.15);
+        color: rgba(0,0,0,.9);
+        a:hover, a > span:hover{
+            cursor: pointer;
+        }
+        p{
+            margin: 0;
+        }
+    }
+
+    td {
+        .table-action{
+            display: flex;
+            flex-direction: row;
+            button{
+                height: 25px;
+                width: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 3px;
+                border:none;
+                border-radius: 4px;
+                background: #f50;
+                span{
+                    font-size: 1rem;
+                    color: white;
+                }
+                &:hover{
+                    cursor: pointer;
+                }
+                &:first-child{
+                    background: #108ee9;
+                }
+            }
+        }
+    }
+}

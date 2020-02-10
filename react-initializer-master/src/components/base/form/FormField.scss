@@ -1,0 +1,46 @@
+@import '../../../sass/variables.scss';
+
+.input-group{
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
+    textarea{
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 12px;
+        border: 1px solid $color-gray-light;
+        font-weight: 400;
+    }
+
+    input{
+        @extend textarea;
+        height: 2rem;
+        border-radius: 0;
+    }
+
+    .ant-radio-group{
+        span{
+            font-size: 12px;
+        }
+    }
+
+    .ant-calendar-picker{
+        width: 100%;
+    }
+
+    .title{
+        margin-bottom: 5px;
+        label{
+            font-size: 11px;
+            font-weight: 600;
+        }
+        span{
+            color: orangered;
+        }
+    }
+    small{
+        color: orangered;
+        font-size: 11px;
+    }
+}

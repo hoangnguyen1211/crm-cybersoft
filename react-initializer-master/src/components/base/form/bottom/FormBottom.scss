@@ -1,0 +1,15 @@
+.form-bottom{
+    background: #fff;
+    width: 100% !important;
+    height: 60px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    button{
+        margin-left: 0.5rem;
+    }
+}

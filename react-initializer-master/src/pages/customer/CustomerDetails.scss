@@ -1,0 +1,91 @@
+@import '../../sass/variables.scss';
+.details-content{
+    .details-body_info{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1rem;
+        .card-info{
+            width: 50%;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+.card-info{
+    width: 100%;
+    margin-bottom: 1rem;
+    .card-item{
+        .card-header{
+            margin-bottom: 1rem;
+            h3{
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+        }
+        .card-content{
+            .info-list-item{
+                display: flex;
+                margin-bottom: 1rem;
+                b{
+                   width: 30%;
+                }
+                span, b{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+.step-bar{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    .step-bar_item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        height: 1.8rem;
+        background: #e6e6e6;
+        position: relative;
+        &:first-child{
+            border-top-left-radius: 13px;
+            border-bottom-left-radius: 13px;
+        }
+        &:last-child{
+            border-top-right-radius: 13px;
+            border-bottom-right-radius: 13px;
+            .item_arrow{
+                display: none;
+            }
+        }
+        span{
+            font-size: 12px;
+        }
+        .item_arrow{
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+            background: #e6e6e6;
+            right: -9px;
+            top: 2px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            z-index: 10;
+        }
+    }
+    .step-bar_item.active{
+        background: $color-yellow-black;
+        span{
+            color: $color-white;
+        }
+        .item_arrow{
+            background: $color-yellow-black;
+        }
+    }
+}

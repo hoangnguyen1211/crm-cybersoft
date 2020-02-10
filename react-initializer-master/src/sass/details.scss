@@ -1,0 +1,169 @@
+@import './variables.scss';
+.details-page{
+    display: flex;
+    align-items: center;
+    .details-left{
+        width: 75%;
+    }
+    .details-right{
+        width: 25%;
+    }
+    .details-header{
+        border-bottom: 1px solid $color-light;
+        padding-bottom: 1.5rem;
+        .header-top{
+            height: 4rem;
+            padding: 0 1rem;
+            border-bottom: 1px solid $color-gray-light;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .nav-left{
+                h4{
+                    margin: 0;
+                    font-size: 1.3rem;
+                    text-transform: uppercase;
+                }
+            }
+            .nav-right{
+                button{
+                    background: $color-yellow-black;
+                    color: $color-white;
+                    border: 0;
+                }
+            }
+        }
+        .header-bottom{
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header-left{
+                display: flex;
+                align-items: center;
+                .icon-box{
+                    height: 6rem;
+                    width: 6rem;
+                    border-radius: 3rem;
+                    background: #f2c1e2;
+                    margin-right: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    span{
+                        font-size: 2.5rem;
+                        color: #c869aa;
+                    }
+                }
+                .info{
+                    h2{
+                        font-size: 1.3rem;
+                        margin-bottom: 0.4rem;
+                    }
+                    .info-small{
+                        @extend .header-left;
+                        span{
+                            font-size: 1.2rem;
+                        }
+                        small{
+                            font-size: 0.9rem;
+                            margin-left: 0.4rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .details-body{
+        padding: 1rem;
+        .details-body_info{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 1rem;
+            .card-info{
+                width: 50%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.card-info{
+    width: 100%;
+    margin-bottom: 1rem;
+    .card-item{
+        .card-header{
+            margin-bottom: 1rem;
+            h3{
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+        }
+        .card-content{
+            .info-list-item{
+                display: flex;
+                margin-bottom: 1rem;
+                b{
+                   width: 30%;
+                }
+                span, b{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+}
+
+.step-bar{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    .step-bar_item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        height: 1.8rem;
+        background: #e6e6e6;
+        position: relative;
+        &:first-child{
+            border-top-left-radius: 13px;
+            border-bottom-left-radius: 13px;
+        }
+        &:last-child{
+            border-top-right-radius: 13px;
+            border-bottom-right-radius: 13px;
+            .item_arrow{
+                display: none;
+            }
+        }
+        span{
+            font-size: 12px;
+        }
+        .item_arrow{
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+            background: #e6e6e6;
+            right: -9px;
+            top: 2px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            z-index: 10;
+        }
+    }
+    .step-bar_item.active{
+        background: $color-yellow-black;
+        span{
+            color: $color-white;
+        }
+        .item_arrow{
+            background: $color-yellow-black;
+        }
+    }
+}

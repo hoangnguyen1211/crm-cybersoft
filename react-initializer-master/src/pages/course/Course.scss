@@ -1,0 +1,62 @@
+@import '../../sass/variables.scss';
+.details-body{
+    .course-details-title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+        h2{
+            font-size: 1.3rem;
+        }
+        button{
+            border: 0;
+            span{
+                font-size: 12px;
+            }
+        }
+        .btn-save{
+            background: $color-yellow-black;
+            color: $color-white;
+        }
+        .btn-close{
+            background: $color-gray-light;
+            margin-left: 0.5rem;
+        }
+    }
+    
+    .course-list{
+        .course-list-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            background: $color-gray-sky;
+            .course-list-item_name{
+                font-weight: 600;
+            }
+            .course-list-item_action{
+                display: flex;
+                align-items: center;
+                a{
+                    @extend .course-list-item_action;
+                    color: $color-black-light;
+                    margin-left: 0.5rem;
+                    border: 1px solid $color-gray-light;
+                    padding: 5px;
+                    border-radius: 2px;
+                    span{
+                        font-size: 1.2rem;
+                    }
+                    &:hover{
+                        background: $color-yellow-black;
+                        border: 1px solid $color-yellow-black;
+                        span{
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

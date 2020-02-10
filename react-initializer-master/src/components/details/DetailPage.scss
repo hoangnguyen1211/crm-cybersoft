@@ -1,0 +1,99 @@
+@import '../../sass/variables.scss';
+.details-page{
+    display: flex;
+    align-items: center;
+    .details-right{
+        width: 25%;
+    }
+    .details-left{
+        flex: 1;
+    }
+    .details-header{
+        border-bottom: 1px solid $color-light;
+        padding-bottom: 1.5rem;
+        .header-top{
+            height: 4rem;
+            padding: 0 1rem;
+            border-bottom: 1px solid $color-gray-light;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .nav-left{
+                h4{
+                    margin: 0;
+                    font-size: 1.2rem;
+                    text-transform: uppercase;
+                }
+            }
+            .nav-right{
+                button{
+                    background: $color-yellow-black;
+                    color: $color-white;
+                    border: 0;
+                }
+            }
+        }
+        .header-bottom{
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .header-left{
+                display: flex;
+                align-items: center;
+                .icon-box{
+                    height: 6rem;
+                    width: 6rem;
+                    border-radius: 3rem;
+                    background: #f2c1e2;
+                    margin-right: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    span{
+                        font-size: 2.5rem;
+                        color: #c869aa;
+                    }
+                }
+                .info{
+                    h2{
+                        font-size: 1.3rem;
+                        margin-bottom: 0.4rem;
+                    }
+                    .info-small{
+                        @extend .header-left;
+                        span{
+                            font-size: 1.2rem;
+                        }
+                        small{
+                            font-size: 0.9rem;
+                            margin-left: 0.4rem;
+                        }
+                    }
+                }
+            }
+            .header-right{
+                a{
+                    display: flex;
+                    color: $color-black-light;
+                    border: 1px solid $color-gray-light;
+                    padding: 0.5rem;
+                    span{
+                        font-size: 20px;
+                    }
+                    &:hover{
+                        background: $color-yellow-black;
+                        border: 1px solid $color-yellow-black;
+                        span{
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .details-content{
+        padding: 1rem;
+    }
+}

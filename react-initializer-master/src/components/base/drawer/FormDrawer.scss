@@ -1,0 +1,48 @@
+@import '../../../sass/variables.scss';
+
+.form-drawer{
+    .ant-drawer-content-wrapper{
+        max-width: 45vw;
+        min-width: 45vw;
+        .ant-drawer-wrapper-body{
+            position: relative;
+            .ant-drawer-body{
+                padding: 0;
+            }
+        }
+
+        .form-body{
+            .header{
+                justify-content: space-between;
+                padding: 0.5rem 1rem;
+                border-bottom: 1px solid $color-gray-light;
+                h6{
+                    margin: 0;
+                }
+            }
+
+            .content{
+                padding: 0.5rem;
+                margin-bottom: 60px;
+                overflow-y: auto;
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                   
+                }
+            }
+        }
+
+        .form-body{
+            .content.horizontal{
+                .input-group{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+
+

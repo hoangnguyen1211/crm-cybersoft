@@ -1,0 +1,29 @@
+@import '../../../sass/variables.scss';
+.sidebar{
+    width: 0;
+    height: 100vh;
+    visibility: hidden;
+    background: $color-black;
+    transition: all 0.3s ease-in-out;
+    .logo{
+        width: 100%;
+        padding: 2rem 0;
+        .img-box{
+            width: 50px;
+            height: 50px;
+            margin: 0 auto;
+            margin-top: 25px;
+            padding: 0.5rem;
+            border-radius: 50%;
+            background: $color-white;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.sidebar.open{
+    width: 12rem;
+    visibility: visible;
+}
